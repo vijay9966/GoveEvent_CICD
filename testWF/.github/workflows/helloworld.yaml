@@ -1,0 +1,11 @@
+name: helloworld
+on:
+  - push
+jobs:
+  greetings:
+    runs-on: ubuntu-latest
+    steps:
+    - id: s00
+      #running some shell bash command
+      run: echo "current date time $(date)"
+ 

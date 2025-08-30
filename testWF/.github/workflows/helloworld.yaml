@@ -8,4 +8,9 @@ jobs:
     - id: s00
       #running some shell bash command
       run: echo "current date time $(date)"
+    - id: s01
+      uses: mscoutermarsh/cowsays-action@master
+      with:
+        text: 'ship ship ship!'
+        color: 'red'
  

@@ -7,8 +7,10 @@ jobs:
     steps:
     - id: s00
       #running some shell bash command
-      run: echo "current date time $(date)"
+      run: echo "current date time $(date), ${GITHUB_OUTPUT}"
     - id: s01
+      run: echo "CURR_DATE=$(date)" >> $GITHUB_OUTPUT  
+    - id: s02
       uses: mscoutermarsh/cowsays-action@master
       with:
         text: 'ship ship ship!'

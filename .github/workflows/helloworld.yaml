@@ -13,6 +13,6 @@ jobs:
     - id: s02
       uses: mscoutermarsh/cowsays-action@master
       with:
-        text: 'ship ship ship!'
+        text: 'ship ship ship!: ${{ steps.s01.outputs.CURR_DATE }}'
         color: 'green'
  

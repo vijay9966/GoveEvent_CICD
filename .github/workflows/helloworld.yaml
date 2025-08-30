@@ -12,5 +12,5 @@ jobs:
       uses: mscoutermarsh/cowsays-action@master
       with:
         text: 'ship ship ship!'
-        color: 'red'
+        color: 'green'
  
